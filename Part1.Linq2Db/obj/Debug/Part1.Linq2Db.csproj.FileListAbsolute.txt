@@ -1,0 +1,8 @@
+c:\users\evgeniy_chernyshkov\documents\visual studio 2015\Projects\Task9\Part1.Linq2Db\bin\Debug\Part1.Linq2Db.dll
+c:\users\evgeniy_chernyshkov\documents\visual studio 2015\Projects\Task9\Part1.Linq2Db\bin\Debug\Part1.Linq2Db.pdb
+c:\users\evgeniy_chernyshkov\documents\visual studio 2015\Projects\Task9\Part1.Linq2Db\bin\Debug\linq2db.dll
+c:\users\evgeniy_chernyshkov\documents\visual studio 2015\Projects\Task9\Part1.Linq2Db\bin\Debug\linq2db.pdb
+c:\users\evgeniy_chernyshkov\documents\visual studio 2015\Projects\Task9\Part1.Linq2Db\bin\Debug\linq2db.xml
+c:\users\evgeniy_chernyshkov\documents\visual studio 2015\Projects\Task9\Part1.Linq2Db\obj\Debug\Part1.Linq2Db.csprojResolveAssemblyReference.cache
+c:\users\evgeniy_chernyshkov\documents\visual studio 2015\Projects\Task9\Part1.Linq2Db\obj\Debug\Part1.Linq2Db.dll
+c:\users\evgeniy_chernyshkov\documents\visual studio 2015\Projects\Task9\Part1.Linq2Db\obj\Debug\Part1.Linq2Db.pdb

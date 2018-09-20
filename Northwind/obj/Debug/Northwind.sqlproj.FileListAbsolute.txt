@@ -1,0 +1,9 @@
+C:\Users\Evgeniy_Chernyshkov\documents\visual studio 2015\Projects\Task9\Northwind\bin\Debug\Northwind.dacpac
+C:\Users\Evgeniy_Chernyshkov\documents\visual studio 2015\Projects\Task9\Northwind\bin\Debug\Northwind.dll
+C:\Users\Evgeniy_Chernyshkov\documents\visual studio 2015\Projects\Task9\Northwind\bin\Debug\Northwind.pdb
+C:\Users\Evgeniy_Chernyshkov\documents\visual studio 2015\Projects\Task9\Northwind\obj\Debug\Model.xml
+C:\Users\Evgeniy_Chernyshkov\documents\visual studio 2015\Projects\Task9\Northwind\obj\Debug\refactor.xml
+C:\Users\Evgeniy_Chernyshkov\documents\visual studio 2015\Projects\Task9\Northwind\obj\Debug\postdeploy.sql
+C:\Users\Evgeniy_Chernyshkov\documents\visual studio 2015\Projects\Task9\Northwind\obj\Debug\predeploy.sql
+C:\Users\Evgeniy_Chernyshkov\documents\visual studio 2015\Projects\Task9\Northwind\obj\Debug\Northwind.dll
+C:\Users\Evgeniy_Chernyshkov\documents\visual studio 2015\Projects\Task9\Northwind\obj\Debug\Northwind.pdb
