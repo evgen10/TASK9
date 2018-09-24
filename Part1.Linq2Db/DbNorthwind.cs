@@ -15,6 +15,8 @@ namespace Part1.Linq2Db
 {
     public class DbNorthwind : DataConnection
     {
+        
+
         public DbNorthwind(string configurationString) : base(configurationString)
         {
             

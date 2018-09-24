@@ -1,7 +1,6 @@
 c:\users\evgeniy_chernyshkov\documents\visual studio 2015\Projects\Task9\Part1.Linq2Db.Test\bin\Debug\Part1.Linq2Db.Test.dll
 c:\users\evgeniy_chernyshkov\documents\visual studio 2015\Projects\Task9\Part1.Linq2Db.Test\bin\Debug\Part1.Linq2Db.Test.pdb
 c:\users\evgeniy_chernyshkov\documents\visual studio 2015\Projects\Task9\Part1.Linq2Db.Test\bin\Debug\linq2db.dll
-c:\users\evgeniy_chernyshkov\documents\visual studio 2015\Projects\Task9\Part1.Linq2Db.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 c:\users\evgeniy_chernyshkov\documents\visual studio 2015\Projects\Task9\Part1.Linq2Db.Test\bin\Debug\Part1.Linq2Db.dll
 c:\users\evgeniy_chernyshkov\documents\visual studio 2015\Projects\Task9\Part1.Linq2Db.Test\bin\Debug\Part1.Linq2Db.pdb
 c:\users\evgeniy_chernyshkov\documents\visual studio 2015\Projects\Task9\Part1.Linq2Db.Test\bin\Debug\linq2db.pdb

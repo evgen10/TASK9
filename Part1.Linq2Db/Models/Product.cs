@@ -19,7 +19,7 @@ namespace Part1.Linq2Db.Models
         public string Name { get; set; }
 
         [Column("SupplierID")]
-        public int? SupplierId { get; set; }
+        public string SupplierId { get; set; }
 
         [Column("CategoryID")]
         public int? CategoryId { get; set; }
