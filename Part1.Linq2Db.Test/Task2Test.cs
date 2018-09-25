@@ -53,7 +53,6 @@ namespace Part1.Linq2Db.Test
 
         }
 
-
         //Статистики по регионам: количества сотрудников по регионам
         [TestMethod]
         public void GetEmployeeCountByRegion()
@@ -75,7 +74,6 @@ namespace Part1.Linq2Db.Test
                 foreach (var employee in regionStatistic)
                 {
                     Console.WriteLine($"Region: { employee.Region}  EmployeesCount { employee.EmployeesCount} ");
-
                 }
 
             }
@@ -104,15 +102,6 @@ namespace Part1.Linq2Db.Test
                         Console.WriteLine($"Company name: {item.Shipper.CompanyName}  ShipCountry {item.ShipCountry}  ShipCity {item.ShipCity} ShipAddress {item.ShipAddress}");
                     }
                 }
-
-                
-
-
-                
-
-
-
-
             }
             
         }

@@ -69,6 +69,7 @@ namespace Part1.Linq2Db.Models
         public int? BossId { get; set; }
 
         [Association(ThisKey = nameof(Id), OtherKey = nameof(Models.EmployeeTerritory.EmployeeId))]
+       // [Association(ThisKey = "EmployeeID", OtherKey = "EmployeeID")]
         public IEnumerable<EmployeeTerritory> EmployeeTerritories { get; set; }
 
         [Association(ThisKey = nameof(Id), OtherKey = nameof(Order.EmployeeId))]
