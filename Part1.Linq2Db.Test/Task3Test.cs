@@ -154,16 +154,51 @@ namespace Part1.Linq2Db.Test
             TransactionScope scope = new TransactionScope();
 
             using (var db = new DbNorthwind(providerName, connectionString))
-            {        
+            {
 
-                var orderDetails = db.OrderDetails.LoadWith(od => od.Order).LoadWith(od => od.Product)
-                                                  .Where(od => od.Order.ShippedDate == null)
+                var orderDetailsWithOutstandingOrder = db.OrderDetails.LoadWith(od => od.Order).LoadWith(od => od.Product).Where(od => od.Order.ShippedDate == null);
+
+
+                #region Demonstration
+
+
+                Console.WriteLine("Before the replacement");
+                foreach (var orderDetail in orderDetailsWithOutstandingOrder.Take(10))
+                {
+                    Console.WriteLine($"Product name: {orderDetail.Product.Name}  Order Id:   {orderDetail.OrderId}");
+                }
+                Console.WriteLine();
+
+             
+
+
+                #endregion
+
+
+                var orderDetails = orderDetailsWithOutstandingOrder
                                                   .Update(od => new OrderDetail
                                                   {
                                                       ProductId = db.Products.First(p => p.CategoryId == od.Product.CategoryId && p.Id > od.ProductId) != null
                                                                    ? db.Products.First(p => p.CategoryId == od.Product.CategoryId && p.Id > od.ProductId).Id
                                                                    : db.Products.First(p => p.CategoryId == od.Product.CategoryId).Id
-                                                  });                
+                                                  });
+
+
+                #region Demonstration
+
+
+                Console.WriteLine("After the replacement");
+                foreach (var orderDetail in orderDetailsWithOutstandingOrder.Take(10))
+                {
+                    Console.WriteLine($"Product name: {orderDetail.Product.Name}  Order Id:   {orderDetail.OrderId}");
+                }
+                Console.WriteLine();
+
+
+
+
+                #endregion
+
                 scope.Dispose();
 
 
@@ -171,6 +206,7 @@ namespace Part1.Linq2Db.Test
 
         }
 
+              
 
         private List<Product> GetProductList()
         {

@@ -22,11 +22,13 @@ namespace Part1.Linq2Db.Test
             {
                 var products = db.Products.LoadWith(p => p.Category).LoadWith(p => p.Supplier);
 
+                #region Demonstration
                 foreach (var product in products)
                 {
                     Console.WriteLine($" Id: {product.Id} ProductName: {product.Name}  Category: {product.Category?.Name}  SupplierName: {product.Supplier?.ContactName}");
                 }
-
+                #endregion
+                
             }
         }
 
@@ -44,10 +46,16 @@ namespace Part1.Linq2Db.Test
                                 join region in db.Regions on territory.RegionId equals region.Id
                                 select new { employee.Id, employee.FirstName, employee.LastName, region.RegionDescription };
 
+                #region Demonstration
+
                 foreach (var employee in employees.Distinct())
                 {
                     Console.WriteLine($"Id: {employee.Id}   Name: {employee.FirstName} {employee.LastName}  Region: {employee.RegionDescription}");
                 }
+
+                #endregion
+
+
 
             }
 
@@ -68,13 +76,17 @@ namespace Part1.Linq2Db.Test
                 var regionStatistic = from regStat in employees.Distinct()
                                       group regStat.EmployeesId by regStat.RegionName into groupResult
                                       select new { Region = groupResult.Key, EmployeesCount = groupResult.Count() };
-                
 
+
+                #region Demonstration
 
                 foreach (var employee in regionStatistic)
                 {
                     Console.WriteLine($"Region: { employee.Region}  EmployeesCount { employee.EmployeesCount} ");
                 }
+                #endregion
+
+
 
             }
 
@@ -91,10 +103,12 @@ namespace Part1.Linq2Db.Test
 
                 var orders = from order in db.Orders.LoadWith(o => o.Employee).LoadWith(o => o.Shipper)
                              group order by new { order.Employee.FirstName, order.Employee.LastName };
-                             
+
+
+                #region Demonstration
 
                 foreach (var order in orders)
-                {                    
+                {
                     Console.WriteLine($"{order.Key.FirstName} {order.Key.LastName}");
 
                     foreach (var item in order)
@@ -102,6 +116,10 @@ namespace Part1.Linq2Db.Test
                         Console.WriteLine($"Company name: {item.Shipper.CompanyName}  ShipCountry {item.ShipCountry}  ShipCity {item.ShipCity} ShipAddress {item.ShipAddress}");
                     }
                 }
+
+                #endregion
+
+
             }
             
         }
